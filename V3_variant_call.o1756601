@@ -1,0 +1,83 @@
+specify reference full path, default reference used instead
+qsub -v '/storage/brno3-cerit/home/filip_kolar/JIC_reference/alygenomes.fasta'
+specify full path to scaffold list to run across in parallel
+if not specified default for lyrata is used
+one scaffold/chromosome per line
+copying done Wed Dec  2 11:58:31 CET 2020
+BAB_12da_HC.g.vcf.gz
+BAB_12da_HC.g.vcf.gz.tbi
+HRA_01ta_HC.g.vcf.gz
+HRA_01ta_HC.g.vcf.gz.tbi
+JIC_reference
+SUB_03da_HC.g.vcf.gz
+SUB_03da_HC.g.vcf.gz.tbi
+TBG_06ta_HC.g.vcf.gz
+TBG_06ta_HC.g.vcf.gz.tbi
+ZEP_07da_HC.g.vcf.gz
+ZEP_07da_HC.g.vcf.gz.tbi
+lyrata_parallel_scaffold_list.txt
+lyrata_scaffolds_rest.intervals
+genotyping 1 samples from 5 /storage/brno3-cerit/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/sample.list.txt samples supplied
+scaffold_9.finished
+lyrata_scaffolds_rest.intervals.finished
+scaffold_2.finished
+scaffold_5.finished
+scaffold_7.finished
+scaffold_8.finished
+scaffold_4.finished
+scaffold_3.finished
+scaffold_6.finished
+scaffold_1.finished
+genotypeGVCF done in parallel for separate scaffolds:
+JIC_reference
+lyrata_parallel_scaffold_list.txt
+lyrata_scaffolds_rest.intervals
+lyrata_scaffolds_restarenosa.vcf.gz
+lyrata_scaffolds_restarenosa.vcf.gz.log
+lyrata_scaffolds_restarenosa.vcf.gz.tbi
+scaffold_1arenosa.vcf.gz
+scaffold_1arenosa.vcf.gz.log
+scaffold_1arenosa.vcf.gz.tbi
+scaffold_2arenosa.vcf.gz
+scaffold_2arenosa.vcf.gz.log
+scaffold_2arenosa.vcf.gz.tbi
+scaffold_3arenosa.vcf.gz
+scaffold_3arenosa.vcf.gz.log
+scaffold_3arenosa.vcf.gz.tbi
+scaffold_4arenosa.vcf.gz
+scaffold_4arenosa.vcf.gz.log
+scaffold_4arenosa.vcf.gz.tbi
+scaffold_5arenosa.vcf.gz
+scaffold_5arenosa.vcf.gz.log
+scaffold_5arenosa.vcf.gz.tbi
+scaffold_6arenosa.vcf.gz
+scaffold_6arenosa.vcf.gz.log
+scaffold_6arenosa.vcf.gz.tbi
+scaffold_7arenosa.vcf.gz
+scaffold_7arenosa.vcf.gz.log
+scaffold_7arenosa.vcf.gz.tbi
+scaffold_8arenosa.vcf.gz
+scaffold_8arenosa.vcf.gz.log
+scaffold_8arenosa.vcf.gz.tbi
+scaffold_9arenosa.vcf.gz
+scaffold_9arenosa.vcf.gz.log
+scaffold_9arenosa.vcf.gz.tbi
+-V lyrata_scaffolds_restarenosa.vcf.gz -V scaffold_1arenosa.vcf.gz -V scaffold_2arenosa.vcf.gz -V scaffold_3arenosa.vcf.gz -V scaffold_4arenosa.vcf.gz -V scaffold_5arenosa.vcf.gz -V scaffold_6arenosa.vcf.gz -V scaffold_7arenosa.vcf.gz -V scaffold_8arenosa.vcf.gz -V scaffold_9arenosa.vcf.gz
+INFO  12:39:21,543 HelpFormatter - ------------------------------------------------------- 
+INFO  12:39:21,545 HelpFormatter - Program Name: org.broadinstitute.gatk.tools.CatVariants 
+INFO  12:39:21,548 HelpFormatter - Program Args: -R JIC_reference/alygenomes.fasta -V lyrata_scaffolds_restarenosa.vcf.gz -V scaffold_1arenosa.vcf.gz -V scaffold_2arenosa.vcf.gz -V scaffold_3arenosa.vcf.gz -V scaffold_4arenosa.vcf.gz -V scaffold_5arenosa.vcf.gz -V scaffold_6arenosa.vcf.gz -V scaffold_7arenosa.vcf.gz -V scaffold_8arenosa.vcf.gz -V scaffold_9arenosa.vcf.gz -assumeSorted -out arenosa.vcf.gz 
+INFO  12:39:21,551 HelpFormatter - Executing as vlkofly@black1.cerit-sc.cz on Linux 4.19.0-8-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  12:39:21,551 HelpFormatter - Date/Time: 2020/12/02 12:39:21 
+INFO  12:39:21,551 HelpFormatter - ------------------------------------------------------- 
+INFO  12:39:21,551 HelpFormatter - ------------------------------------------------------- 
+.........10
+------------------------------------------------------------------------------------------
+Done. There were no warn messages.
+------------------------------------------------------------------------------------------
+rm: cannot remove '*g.vcf*': No such file or directory
+cp: -r not specified; omitting directory '/scratch.ssd/vlkofly/job_1756601.cerit-pbs.cerit-sc.cz/JIC_reference'
+
+**********************************************************************************************************
+
+WARNING: The CLEAN_SCRATCH is set to false -- scratch directories have NOT BEEN cleaned!
+Please, copy the data manually from the host black1.cerit-sc.cz and CLEAN the scratches.

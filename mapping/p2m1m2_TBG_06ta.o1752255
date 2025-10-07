@@ -1,0 +1,107 @@
+input files copied at Tue Dec 1 14:03:00 CET 2020
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch/vlkofly/job_1752255.cerit-pbs.cerit-sc.cz
+TrimmomaticPE: Started with arguments:
+ -threads 2 -trimlog logstat/trim_lane0Arenosa5.log Arenosa5_R1.fastq.gz Arenosa5_R2.fastq.gz -baseout trim_Arenosa5_R1.fastq.gz ILLUMINACLIP:TruSeq3-PE-2.fa:2:23:10 TRAILING:15 SLIDINGWINDOW:4:15 MINLEN:50
+Using templated Output files: trim_Arenosa5_R1_1P.fastq.gz trim_Arenosa5_R1_1U.fastq.gz trim_Arenosa5_R1_2P.fastq.gz trim_Arenosa5_R1_2U.fastq.gz
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA'
+Using Long Clipping Sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+Using Long Clipping Sequence: 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+Using Long Clipping Sequence: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 1561 Both Surviving: 1561 (100.00%) Forward Only Surviving: 0 (0.00%) Reverse Only Surviving: 0 (0.00%) Dropped: 0 (0.00%)
+TrimmomaticPE: Completed successfully
+trimming of lane 0 finished at Tue Dec 1 14:03:01 CET 2020
+processing lane 0
+
+gzip: stdout: Broken pipe
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 3122 sequences (469225 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (348, 723, 29, 347)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (37, 60, 90)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 196)
+[M::mem_pestat] mean and std.dev: (65.46, 40.59)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 249)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (82, 156, 210)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 466)
+[M::mem_pestat] mean and std.dev: (147.38, 75.63)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 594)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (6, 11, 20)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 48)
+[M::mem_pestat] mean and std.dev: (11.12, 8.58)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 62)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (45, 74, 107)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 231)
+[M::mem_pestat] mean and std.dev: (76.68, 44.28)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 293)
+[M::mem_pestat] skip orientation RF
+[mem_sam_pe] paired reads have different names: "D00507:276:HJTVNBCXY:1:1113:5137:29651", "D00507:276:HJTVNBCXY:1:1215:10898:15853"
+
+paired reads mapped at Tue Dec 1 14:03:02 CET 2020
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[main] Version: 0.7.15-r1140
+[main] CMD: bwa mem -M -R @RG\tID:@D00507:276:HJTVNBCXY:1\tLB:@D00507:276:HJTVNBCXY:1one\tPL:illumina\tSM:TBG_06ta -t 3 JIC_reference/alygenomes.fasta outtrim/trim_Arenosa5_R1_1U.fastq.gz
+[main] Real time: 0.206 sec; CPU: 0.234 sec
+unpaired reads1 mapped at Tue Dec 1 14:03:02 CET 2020
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[main] Version: 0.7.15-r1140
+[main] CMD: bwa mem -M -R @RG\tID:@D00507:276:HJTVNBCXY:1\tLB:@D00507:276:HJTVNBCXY:1one\tPL:illumina\tSM:TBG_06ta -t 3 JIC_reference/alygenomes.fasta outtrim/trim_Arenosa5_R1_2U.fastq.gz
+[main] Real time: 0.197 sec; CPU: 0.218 sec
+unpaired reads2 lane mapped at Tue Dec 1 14:03:03 CET 2020
+all reads of lane sorted Tue Dec 1 14:03:03 CET 2020
+I=sort_Arenosa5_R1_paired.bam I=sort_Arenosa5_R1_unpaired1.bam I=sort_Arenosa5_R1_unpaired2.bam
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch/vlkofly/job_1752255.cerit-pbs.cerit-sc.cz
+[Tue Dec 01 14:03:03 CET 2020] picard.sam.MergeSamFiles INPUT=[sort_Arenosa5_R1_paired.bam, sort_Arenosa5_R1_unpaired1.bam, sort_Arenosa5_R1_unpaired2.bam] OUTPUT=Arenosa5merged.bam    SORT_ORDER=coordinate ASSUME_SORTED=false MERGE_SEQUENCE_DICTIONARIES=false USE_THREADING=false VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Tue Dec 01 14:03:03 CET 2020] Executing as vlkofly@zelda1.cerit-sc.cz on Linux 4.19.0-9-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27; Picard version: 2.8.2-6-gf25b997-SNAPSHOT
+INFO	2020-12-01 14:03:03	MergeSamFiles	Input files are in same order as output so sorting to temp directory is not needed.
+INFO	2020-12-01 14:03:03	MergeSamFiles	Finished reading inputs.
+[Tue Dec 01 14:03:03 CET 2020] picard.sam.MergeSamFiles done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2058354688
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch/vlkofly/job_1752255.cerit-pbs.cerit-sc.cz
+[Tue Dec 01 14:03:03 CET 2020] picard.sam.BuildBamIndex INPUT=Arenosa5merged.bam    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Tue Dec 01 14:03:03 CET 2020] Executing as vlkofly@zelda1.cerit-sc.cz on Linux 4.19.0-9-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27; Picard version: 2.8.2-6-gf25b997-SNAPSHOT
+INFO	2020-12-01 14:03:04	BuildBamIndex	Successfully wrote bam index file /scratch/vlkofly/job_1752255.cerit-pbs.cerit-sc.cz/Arenosa5merged.bai
+[Tue Dec 01 14:03:04 CET 2020] picard.sam.BuildBamIndex done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2058354688
+all reads sorted and merged Tue Dec 1 14:03:04 CET 2020
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch/vlkofly/job_1752255.cerit-pbs.cerit-sc.cz
+[Tue Dec 01 14:03:04 CET 2020] picard.sam.markduplicates.MarkDuplicates MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=199950 TAGGING_POLICY=All INPUT=[Arenosa5merged.bam] OUTPUT=Arenosa5dedup.bam METRICS_FILE=logstat/Dup_metricsArenosa5.log ASSUME_SORTED=true    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 SORTING_COLLECTION_SIZE_RATIO=0.25 REMOVE_SEQUENCING_DUPLICATES=false REMOVE_DUPLICATES=false DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Tue Dec 01 14:03:04 CET 2020] Executing as vlkofly@zelda1.cerit-sc.cz on Linux 4.19.0-9-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27; Picard version: 2.8.2-6-gf25b997-SNAPSHOT
+INFO	2020-12-01 14:03:04	MarkDuplicates	Start of doWork freeMemory: 2042564944; totalMemory: 2058354688; maxMemory: 19088801792
+INFO	2020-12-01 14:03:04	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2020-12-01 14:03:04	MarkDuplicates	Will retain up to 73418468 data points before spilling to disk.
+INFO	2020-12-01 14:03:04	MarkDuplicates	Read 0 records. 0 pairs never matched.
+INFO	2020-12-01 14:03:05	MarkDuplicates	After buildSortedReadEndLists freeMemory: 1457737400; totalMemory: 2058354688; maxMemory: 19088801792
+INFO	2020-12-01 14:03:05	MarkDuplicates	Will retain up to 298262528 duplicate indices before spilling to disk.
+INFO	2020-12-01 14:03:06	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2020-12-01 14:03:06	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2020-12-01 14:03:06	MarkDuplicates	Sorting list of duplicate records.
+INFO	2020-12-01 14:03:06	MarkDuplicates	After generateDuplicateIndexes freeMemory: 2046496192; totalMemory: 6831472640; maxMemory: 19088801792
+INFO	2020-12-01 14:03:06	MarkDuplicates	Marking 0 records as duplicates.
+INFO	2020-12-01 14:03:06	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2020-12-01 14:03:06	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2020-12-01 14:03:07	MarkDuplicates	Before output close freeMemory: 4431690832; totalMemory: 6831472640; maxMemory: 19088801792
+INFO	2020-12-01 14:03:07	MarkDuplicates	After output close freeMemory: 4431760704; totalMemory: 6831472640; maxMemory: 19088801792
+[Tue Dec 01 14:03:07 CET 2020] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.05 minutes.
+Runtime.totalMemory()=6831472640
+deduplicated Tue Dec 1 14:03:07 CET 2020
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch/vlkofly/job_1752255.cerit-pbs.cerit-sc.cz
+[Tue Dec 01 14:03:07 CET 2020] picard.sam.BuildBamIndex INPUT=Arenosa5dedup.bam    VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Tue Dec 01 14:03:07 CET 2020] Executing as vlkofly@zelda1.cerit-sc.cz on Linux 4.19.0-9-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27; Picard version: 2.8.2-6-gf25b997-SNAPSHOT
+INFO	2020-12-01 14:03:07	BuildBamIndex	Successfully wrote bam index file /scratch/vlkofly/job_1752255.cerit-pbs.cerit-sc.cz/Arenosa5dedup.bai
+[Tue Dec 01 14:03:07 CET 2020] picard.sam.BuildBamIndex done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2058354688
+all reads sorted and merged Tue Dec 1 14:03:07 CET 2020
+awk: cmd. line:1: fatal: division by zero attempted
+awk: cmd. line:1: fatal: division by zero attempted
+stats done at Tue Dec 1 14:03:08 CET 2020
+results exported at Tue Dec 1 14:03:08 CET 2020
+
+**********************************************************************************************************
+
+The SCRATCHes have been SUCCESSFULLY cleaned...

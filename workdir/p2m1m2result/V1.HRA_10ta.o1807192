@@ -1,0 +1,68 @@
+data loaded at Thu Dec 10 18:35:05 CET 2020
+INFO  18:35:07,622 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  18:35:07,624 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  18:35:07,624 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  18:35:07,624 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  18:35:07,625 HelpFormatter - [Thu Dec 10 18:35:07 CET 2020] Executing on Linux 4.19.0-6-amd64 amd64 
+INFO  18:35:07,625 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  18:35:07,628 HelpFormatter - Program Args: -T HaplotypeCaller -I HRA_10ta_final.bam --min_base_quality_score 20 --min_mapping_quality_score 20 -rf BadMate -R JIC_reference/alygenomes.fasta -o HRA_10ta_HC.g.vcf.gz -ploidy 4 -stand_call_conf 20 -ERC GVCF --pcr_indel_model NONE -nct 2 --max_num_PL_values 350 
+INFO  18:35:07,631 HelpFormatter - Executing as vlkofly@zefron1.cerit-sc.cz on Linux 4.19.0-6-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  18:35:07,632 HelpFormatter - Date/Time: 2020/12/10 18:35:07 
+INFO  18:35:07,632 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  18:35:07,632 HelpFormatter - -------------------------------------------------------------------------------- 
+WARN  18:35:07,636 GATKVCFUtils - Creating Tabix index for HRA_10ta_HC.g.vcf.gz, ignoring user-specified index type and parameter 
+INFO  18:35:07,644 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  18:35:07,930 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 500 
+INFO  18:35:07,936 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  18:35:08,000 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.06 
+INFO  18:35:08,035 HCMappingQualityFilter - Filtering out reads with MAPQ < 20 
+INFO  18:35:08,058 MicroScheduler - Running the GATK in parallel mode with 2 total threads, 2 CPU thread(s) for each of 1 data thread(s), of 40 processors available on this machine 
+INFO  18:35:08,218 GenomeAnalysisEngine - Preparing for traversal over 1 BAM files 
+INFO  18:35:08,289 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  18:35:08,289 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  18:35:08,290 ProgressMeter -                 |      processed |    time |         per 1M |           |   total | remaining 
+INFO  18:35:08,290 ProgressMeter -        Location | active regions | elapsed | active regions | completed | runtime |   runtime 
+INFO  18:35:08,290 HaplotypeCaller - Currently, physical phasing is not available when ploidy is different than 2; therefore it won't be performed 
+INFO  18:35:08,290 HaplotypeCaller - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output 
+INFO  18:35:08,290 HaplotypeCaller - All sites annotated with PLs forced to true for reference-model confidence output 
+WARN  18:35:08,326 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+INFO  18:35:08,441 HaplotypeCaller - Using global mismapping rate of 45 => -4.5 in log10 likelihood units 
+INFO  18:35:08,442 PairHMM - Performance profiling for PairHMM is disabled because the program is being run with multiple threads (-nct>1) option
+Profiling is enabled only when running in single thread mode
+ 
+Using AVX accelerated implementation of PairHMM
+INFO  18:35:17,046 VectorLoglessPairHMM - libVectorLoglessPairHMM unpacked successfully from GATK jar file 
+INFO  18:35:17,047 VectorLoglessPairHMM - Using vectorized implementation of PairHMM 
+WARN  18:35:17,292 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not org.broadinstitute.gatk.tools.walkers.haplotypecaller.HaplotypeCaller 
+INFO  18:35:38,305 ProgressMeter - scaffold_1:5219257              0.0    30.0 s           49.6 w        2.5%    19.8 m      19.3 m 
+INFO  18:36:08,306 ProgressMeter - scaffold_1:5996058              0.0    60.0 s           99.2 w        2.9%    34.5 m      33.5 m 
+INFO  18:36:38,325 ProgressMeter - scaffold_3:11877263      5.2453403E7    90.0 s            1.0 s       31.1%     4.8 m       3.3 m 
+INFO  18:37:08,326 ProgressMeter - scaffold_6:5605815     1.21468233E8   120.0 s            0.0 s       61.4%     3.3 m      75.0 s 
+INFO  18:37:38,357 ProgressMeter - scaffold_8:17406734     1.71231018E8     2.5 m            0.0 s       91.2%     2.7 m      14.0 s 
+INFO  18:37:48,552 HaplotypeCaller - Ran local assembly on 691153 active regions 
+INFO  18:37:48,641 ProgressMeter -            done     2.06915596E8     2.7 m            0.0 s      100.0%     2.7 m       0.0 s 
+INFO  18:37:48,642 ProgressMeter - Total runtime 160.35 secs, 2.67 min, 0.04 hours 
+INFO  18:37:48,642 MicroScheduler - 9420 reads were filtered out during the traversal out of approximately 14668 total reads (64.22%) 
+INFO  18:37:48,642 MicroScheduler -   -> 0 reads (0.00% of total) failing BadCigarFilter 
+INFO  18:37:48,642 MicroScheduler -   -> 230 reads (1.57% of total) failing BadMateFilter 
+INFO  18:37:48,643 MicroScheduler -   -> 562 reads (3.83% of total) failing DuplicateReadFilter 
+INFO  18:37:48,643 MicroScheduler -   -> 0 reads (0.00% of total) failing FailsVendorQualityCheckFilter 
+INFO  18:37:48,643 MicroScheduler -   -> 8311 reads (56.66% of total) failing HCMappingQualityFilter 
+INFO  18:37:48,643 MicroScheduler -   -> 0 reads (0.00% of total) failing MalformedReadFilter 
+INFO  18:37:48,643 MicroScheduler -   -> 0 reads (0.00% of total) failing MappingQualityUnavailableFilter 
+INFO  18:37:48,643 MicroScheduler -   -> 317 reads (2.16% of total) failing NotPrimaryAlignmentFilter 
+INFO  18:37:48,644 MicroScheduler -   -> 0 reads (0.00% of total) failing UnmappedReadFilter 
+------------------------------------------------------------------------------------------
+Done. There were 3 WARN messages, the first 3 are repeated below.
+WARN  18:35:07,636 GATKVCFUtils - Creating Tabix index for HRA_10ta_HC.g.vcf.gz, ignoring user-specified index type and parameter 
+WARN  18:35:08,326 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  18:35:17,292 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not org.broadinstitute.gatk.tools.walkers.haplotypecaller.HaplotypeCaller 
+------------------------------------------------------------------------------------------
+calling done at Thu Dec 10 18:37:48 CET 2020
+
+Finished
+
+
+**********************************************************************************************************
+
+The SCRATCHes have been SUCCESSFULLY cleaned...

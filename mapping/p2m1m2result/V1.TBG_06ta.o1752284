@@ -1,0 +1,54 @@
+data loaded at Tue Dec 1 14:29:27 CET 2020
+INFO  14:29:38,126 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  14:29:38,129 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  14:29:38,129 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  14:29:38,129 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  14:29:38,129 HelpFormatter - [Tue Dec 01 14:29:38 CET 2020] Executing on Linux 4.19.0-9-amd64 amd64 
+INFO  14:29:38,129 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  14:29:38,133 HelpFormatter - Program Args: -T HaplotypeCaller -I TBG_06ta_final.bam --min_base_quality_score 20 --min_mapping_quality_score 20 -rf BadMate -R JIC_reference/alygenomes.fasta -o TBG_06ta_HC.g.vcf.gz -ploidy 4 -stand_call_conf 20 -ERC GVCF --pcr_indel_model NONE -nct 2 --max_num_PL_values 350 
+INFO  14:29:38,140 HelpFormatter - Executing as vlkofly@zelda8.cerit-sc.cz on Linux 4.19.0-9-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  14:29:38,141 HelpFormatter - Date/Time: 2020/12/01 14:29:38 
+INFO  14:29:38,141 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  14:29:38,141 HelpFormatter - -------------------------------------------------------------------------------- 
+WARN  14:29:38,146 GATKVCFUtils - Creating Tabix index for TBG_06ta_HC.g.vcf.gz, ignoring user-specified index type and parameter 
+INFO  14:29:38,157 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  14:29:38,622 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 500 
+INFO  14:29:38,629 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  14:29:38,673 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.04 
+INFO  14:29:38,701 HCMappingQualityFilter - Filtering out reads with MAPQ < 20 
+INFO  14:29:38,764 MicroScheduler - Running the GATK in parallel mode with 2 total threads, 2 CPU thread(s) for each of 1 data thread(s), of 144 processors available on this machine 
+INFO  14:29:39,511 GenomeAnalysisEngine - Preparing for traversal over 1 BAM files 
+INFO  14:29:39,595 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  14:29:39,595 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  14:29:39,596 ProgressMeter -                 |      processed |    time |         per 1M |           |   total | remaining 
+INFO  14:29:39,596 ProgressMeter -        Location | active regions | elapsed | active regions | completed | runtime |   runtime 
+INFO  14:29:39,596 HaplotypeCaller - Currently, physical phasing is not available when ploidy is different than 2; therefore it won't be performed 
+INFO  14:29:39,596 HaplotypeCaller - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output 
+INFO  14:29:39,597 HaplotypeCaller - All sites annotated with PLs forced to true for reference-model confidence output 
+WARN  14:29:39,639 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+INFO  14:29:39,711 HaplotypeCaller - Using global mismapping rate of 45 => -4.5 in log10 likelihood units 
+INFO  14:29:39,712 PairHMM - Performance profiling for PairHMM is disabled because the program is being run with multiple threads (-nct>1) option
+Profiling is enabled only when running in single thread mode
+ 
+INFO  14:30:09,599 ProgressMeter - scaffold_2:13821760      3.3132539E7    30.0 s            0.0 s       22.7%     2.2 m     102.0 s 
+INFO  14:30:42,195 ProgressMeter - scaffold_4:20326132       7.691795E7    62.0 s            0.0 s       47.0%     2.2 m      69.0 s 
+INFO  14:31:12,205 ProgressMeter - scaffold_7:9199301     1.46581821E8    92.0 s            0.0 s       75.3%     2.0 m      30.0 s 
+Using AVX accelerated implementation of PairHMM
+INFO  14:31:37,478 VectorLoglessPairHMM - libVectorLoglessPairHMM unpacked successfully from GATK jar file 
+INFO  14:31:37,479 VectorLoglessPairHMM - Using vectorized implementation of PairHMM 
+INFO  14:31:37,480 HaplotypeCaller - Ran local assembly on 690062 active regions 
+INFO  14:31:37,531 ProgressMeter -            done     2.06915596E8   117.0 s            0.0 s      100.0%   117.0 s       0.0 s 
+INFO  14:31:37,531 ProgressMeter - Total runtime 117.94 secs, 1.97 min, 0.03 hours 
+------------------------------------------------------------------------------------------
+Done. There were 2 WARN messages, the first 2 are repeated below.
+WARN  14:29:38,146 GATKVCFUtils - Creating Tabix index for TBG_06ta_HC.g.vcf.gz, ignoring user-specified index type and parameter 
+WARN  14:29:39,639 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+------------------------------------------------------------------------------------------
+calling done at Tue Dec 1 14:31:37 CET 2020
+
+Finished
+
+
+**********************************************************************************************************
+
+The SCRATCHes have been SUCCESSFULLY cleaned...

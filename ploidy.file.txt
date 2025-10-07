@@ -1,0 +1,5 @@
+ZEP_07da	2
+HRA_01ta	4
+BAB_12da	2
+SUB_03da	2
+HRA_10ta	4

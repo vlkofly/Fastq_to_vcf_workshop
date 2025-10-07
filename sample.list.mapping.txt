@@ -1,0 +1,5 @@
+Arenosa1	ZEP_07da	TruSeq3-PE-2.fa
+Arenosa2	HRA_01ta	TruSeq3-PE-2.fa
+Arenosa3	BAB_12da	TruSeq3-PE-2.fa
+Arenosa4	SUB_03da	TruSeq3-PE-2.fa
+Arenosa5	HRA_10ta	TruSeq3-PE-2.fa	

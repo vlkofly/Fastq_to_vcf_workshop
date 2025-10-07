@@ -1,0 +1,229 @@
+[2020-12-10 18:10:51,163] multiqc                                            [DEBUG  ]  No MultiQC config found: /afs/ics.muni.cz/software/python-3.6.2/gcc/lib/python3.6/site-packages/multiqc_config.yaml
+[2020-12-10 18:10:51,166] multiqc                                            [DEBUG  ]  No MultiQC config found: /storage/brno3-cerit/home/vlkofly/.multiqc_config.yaml
+[2020-12-10 18:10:51,169] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2020-12-10 18:10:51,169] multiqc                                            [DEBUG  ]  Command used: /software/python-3.6.2/gcc/bin/multiqc .
+[2020-12-10 18:10:52,472] multiqc                                            [DEBUG  ]  Could not connect to multiqc.info for version check: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:748)>
+[2020-12-10 18:10:52,472] multiqc                                            [INFO   ]  This is MultiQC v1.9
+[2020-12-10 18:10:52,472] multiqc                                            [DEBUG  ]  Command     : /software/python-3.6.2/gcc/bin/multiqc .
+[2020-12-10 18:10:52,472] multiqc                                            [DEBUG  ]  Working dir : /mnt/storage-brno3-cerit/nfs4/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/workdir/p2m1m2result/logstat
+[2020-12-10 18:10:52,472] multiqc                                            [INFO   ]  Template    : default
+[2020-12-10 18:10:52,472] multiqc                                            [DEBUG  ]  Running Python 3.6.2 (default, Aug  3 2017, 10:31:36)  [GCC 4.9.2]
+[2020-12-10 18:10:52,473] multiqc                                            [INFO   ]  Searching   : /mnt/storage-brno3-cerit/nfs4/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/workdir/p2m1m2result/logstat
+[2020-12-10 18:10:52,474] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, conpair, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dedup, damageprofiler, biobambam2, mtnucratio, picard, prokka, samblaster, samtools, sexdeterrmine, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, snpsplit, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, pycoqc, minionqc, multivcfanalyzer, clusterflow, bcl2fastq, interop, ivar, flash, seqyclean
+[2020-12-10 18:10:52,474] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpw827ufd9
+[2020-12-10 18:10:56,192] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_1P_fastqc.html
+[2020-12-10 18:10:56,227] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_1P_fastqc.html
+[2020-12-10 18:10:56,960] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa4_R2_fastqc.html
+[2020-12-10 18:10:57,003] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa4_R2_fastqc.html
+[2020-12-10 18:10:57,325] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa1_1000L_R2_fastqc.html
+[2020-12-10 18:10:57,364] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa1_1000L_R2_fastqc.html
+[2020-12-10 18:10:58,033] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:58,069] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:58,069] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:58,069] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:58,069] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:58,069] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:58,070] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:58,094] multiqc                                            [DEBUG  ]  File ignored by stacks/sumstats because it exceeded search pattern filesize limit: trim_lane0Arenosa4.log
+[2020-12-10 18:10:59,109] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_2U_fastqc.html
+[2020-12-10 18:10:59,151] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_2U_fastqc.html
+[2020-12-10 18:10:59,731] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Dup_metricsArenosa1.log
+[2020-12-10 18:10:59,935] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Dup_metricsArenosa4.log
+[2020-12-10 18:11:00,154] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa3.stats.txt
+[2020-12-10 18:11:00,198] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa3.stats.txt
+[2020-12-10 18:11:00,947] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_lane0Arenosa2.log
+[2020-12-10 18:11:00,993] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_lane0Arenosa2.log
+[2020-12-10 18:11:00,993] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: trim_lane0Arenosa2.log
+[2020-12-10 18:11:00,993] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: trim_lane0Arenosa2.log
+[2020-12-10 18:11:00,994] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: trim_lane0Arenosa2.log
+[2020-12-10 18:11:00,994] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: trim_lane0Arenosa2.log
+[2020-12-10 18:11:00,994] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: trim_lane0Arenosa2.log
+[2020-12-10 18:11:01,536] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa2.stats.txt
+[2020-12-10 18:11:01,616] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa2.stats.txt
+[2020-12-10 18:11:02,200] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa3_1000L_R2_fastqc.html
+[2020-12-10 18:11:02,250] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa3_1000L_R2_fastqc.html
+[2020-12-10 18:11:02,610] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa2_1000L_R1_fastqc.html
+[2020-12-10 18:11:02,655] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa2_1000L_R1_fastqc.html
+[2020-12-10 18:11:03,018] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa5_R1_1P_fastqc.html
+[2020-12-10 18:11:03,075] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa5_R1_1P_fastqc.html
+[2020-12-10 18:11:05,073] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa5_R1_fastqc.html
+[2020-12-10 18:11:05,106] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa5_R1_fastqc.html
+[2020-12-10 18:11:05,618] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_2U_fastqc.html
+[2020-12-10 18:11:05,655] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_2U_fastqc.html
+[2020-12-10 18:11:06,474] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_2P_fastqc.html
+[2020-12-10 18:11:06,499] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_2P_fastqc.html
+[2020-12-10 18:11:06,680] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa4_R1_fastqc.html
+[2020-12-10 18:11:06,766] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa4_R1_fastqc.html
+[2020-12-10 18:11:08,460] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa3_1000L_R1_fastqc.html
+[2020-12-10 18:11:08,500] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa3_1000L_R1_fastqc.html
+[2020-12-10 18:11:09,335] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_1P_fastqc.html
+[2020-12-10 18:11:09,417] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_1P_fastqc.html
+[2020-12-10 18:11:09,781] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa2_1000L_R2_fastqc.html
+[2020-12-10 18:11:09,846] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa2_1000L_R2_fastqc.html
+[2020-12-10 18:11:10,551] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Dup_metricsArenosa5.log
+[2020-12-10 18:11:10,835] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_lane0Arenosa3.log
+[2020-12-10 18:11:10,925] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_lane0Arenosa3.log
+[2020-12-10 18:11:10,926] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: trim_lane0Arenosa3.log
+[2020-12-10 18:11:10,926] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: trim_lane0Arenosa3.log
+[2020-12-10 18:11:10,926] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: trim_lane0Arenosa3.log
+[2020-12-10 18:11:10,926] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: trim_lane0Arenosa3.log
+[2020-12-10 18:11:10,926] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: trim_lane0Arenosa3.log
+[2020-12-10 18:11:11,765] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa4_R1_1P_fastqc.html
+[2020-12-10 18:11:11,796] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa4_R1_1P_fastqc.html
+[2020-12-10 18:11:12,090] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa4.stats.txt
+[2020-12-10 18:11:12,125] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa4.stats.txt
+[2020-12-10 18:11:12,786] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa5.stats.txt
+[2020-12-10 18:11:12,824] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa5.stats.txt
+[2020-12-10 18:11:13,403] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_lane0Arenosa5.log
+[2020-12-10 18:11:13,491] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_lane0Arenosa5.log
+[2020-12-10 18:11:13,491] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: trim_lane0Arenosa5.log
+[2020-12-10 18:11:13,491] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: trim_lane0Arenosa5.log
+[2020-12-10 18:11:13,491] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: trim_lane0Arenosa5.log
+[2020-12-10 18:11:13,491] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: trim_lane0Arenosa5.log
+[2020-12-10 18:11:13,491] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: trim_lane0Arenosa5.log
+[2020-12-10 18:11:14,288] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa1.stats.txt
+[2020-12-10 18:11:14,338] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa1.stats.txt
+[2020-12-10 18:11:14,968] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Dup_metricsArenosa3.log
+[2020-12-10 18:11:15,231] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa5_R1_2P_fastqc.html
+[2020-12-10 18:11:15,276] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa5_R1_2P_fastqc.html
+[2020-12-10 18:11:15,659] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_2P_fastqc.html
+[2020-12-10 18:11:15,747] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_2P_fastqc.html
+[2020-12-10 18:11:16,022] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_2U_fastqc.html
+[2020-12-10 18:11:16,057] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_2U_fastqc.html
+[2020-12-10 18:11:16,362] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa1_1000L_R1_fastqc.html
+[2020-12-10 18:11:16,393] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa1_1000L_R1_fastqc.html
+[2020-12-10 18:11:16,887] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_1U_fastqc.html
+[2020-12-10 18:11:16,965] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_1U_fastqc.html
+[2020-12-10 18:11:17,191] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_lane0Arenosa1.log
+[2020-12-10 18:11:17,226] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_lane0Arenosa1.log
+[2020-12-10 18:11:17,227] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: trim_lane0Arenosa1.log
+[2020-12-10 18:11:17,227] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: trim_lane0Arenosa1.log
+[2020-12-10 18:11:17,227] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: trim_lane0Arenosa1.log
+[2020-12-10 18:11:17,227] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: trim_lane0Arenosa1.log
+[2020-12-10 18:11:17,227] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: trim_lane0Arenosa1.log
+[2020-12-10 18:11:17,723] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_1U_fastqc.html
+[2020-12-10 18:11:17,786] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_1U_fastqc.html
+[2020-12-10 18:11:18,048] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_1U_fastqc.html
+[2020-12-10 18:11:18,097] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa2_1000L_R1_1U_fastqc.html
+[2020-12-10 18:11:19,497] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa4_R1_2P_fastqc.html
+[2020-12-10 18:11:20,771] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa4_R1_2P_fastqc.html
+[2020-12-10 18:11:22,107] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_2P_fastqc.html
+[2020-12-10 18:11:22,186] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa3_1000L_R1_2P_fastqc.html
+[2020-12-10 18:11:22,569] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Dup_metricsArenosa2.log
+[2020-12-10 18:11:23,267] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: Arenosa5_R2_fastqc.html
+[2020-12-10 18:11:23,310] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: Arenosa5_R2_fastqc.html
+[2020-12-10 18:11:23,637] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_1P_fastqc.html
+[2020-12-10 18:11:23,724] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: trim_Arenosa1_1000L_R1_1P_fastqc.html
+[2020-12-10 18:11:43,481] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.2.1
+[2020-12-10 18:11:43,642] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.2.1
+[2020-12-10 18:11:44,409] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2020-12-10 18:11:44,494] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2020-12-10 18:11:44,587] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2020-12-10 18:11:44,688] multiqc                                            [DEBUG  ]  No samples found: somalier
+[2020-12-10 18:11:44,780] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2020-12-10 18:11:45,006] multiqc                                            [DEBUG  ]  No samples found: mosdepth
+[2020-12-10 18:11:45,086] multiqc                                            [DEBUG  ]  No samples found: phantompeakqualtools
+[2020-12-10 18:11:45,124] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2020-12-10 18:11:45,218] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2020-12-10 18:11:45,320] multiqc                                            [DEBUG  ]  No samples found: quast
+[2020-12-10 18:11:45,420] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2020-12-10 18:11:45,516] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2020-12-10 18:11:45,607] multiqc                                            [DEBUG  ]  No samples found: rockhopper
+[2020-12-10 18:11:45,695] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2020-12-10 18:11:46,006] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2020-12-10 18:11:46,093] multiqc                                            [DEBUG  ]  No samples found: busco
+[2020-12-10 18:11:46,182] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2020-12-10 18:11:46,274] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2020-12-10 18:11:46,368] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2020-12-10 18:11:46,720] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2020-12-10 18:11:46,803] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2020-12-10 18:11:46,901] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2020-12-10 18:11:46,997] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2020-12-10 18:11:47,099] multiqc                                            [DEBUG  ]  No samples found: happy
+[2020-12-10 18:11:47,207] multiqc                                            [DEBUG  ]  No samples found: mirtop
+[2020-12-10 18:11:47,354] multiqc                                            [DEBUG  ]  No samples found: homer
+[2020-12-10 18:11:47,445] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2020-12-10 18:11:47,525] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2020-12-10 18:11:47,615] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2020-12-10 18:11:47,770] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2020-12-10 18:11:47,856] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2020-12-10 18:11:47,982] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2020-12-10 18:11:48,064] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2020-12-10 18:11:48,228] multiqc                                            [DEBUG  ]  No samples found: fgbio
+[2020-12-10 18:11:49,063] multiqc                                            [DEBUG  ]  No samples found: dragen
+[2020-12-10 18:11:49,177] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2020-12-10 18:11:49,292] multiqc                                            [DEBUG  ]  No samples found: damageprofiler
+[2020-12-10 18:11:50,047] multiqc                                            [DEBUG  ]  No samples found: biobambam2
+[2020-12-10 18:11:50,130] multiqc                                            [DEBUG  ]  No samples found: mtnucratio
+[2020-12-10 18:11:50,349] multiqc.modules.picard.picard                      [INFO   ]  Found 5 MarkDuplicates reports
+[2020-12-10 18:11:50,753] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2020-12-10 18:11:50,843] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2020-12-10 18:11:51,215] multiqc.modules.samtools.samtools                  [INFO   ]  Found 5 stats reports
+[2020-12-10 18:11:51,297] multiqc.modules.samtools.samtools                  [INFO   ]  Found 5 flagstat reports
+[2020-12-10 18:11:51,388] multiqc.modules.samtools.samtools                  [INFO   ]  Found 5 idxstats reports
+[2020-12-10 18:11:51,513] multiqc                                            [DEBUG  ]  No samples found: sexdeterrmine
+[2020-12-10 18:11:51,637] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2020-12-10 18:11:51,725] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2020-12-10 18:11:51,966] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2020-12-10 18:11:52,089] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2020-12-10 18:11:52,214] multiqc                                            [DEBUG  ]  No samples found: stacks
+[2020-12-10 18:11:52,337] multiqc                                            [DEBUG  ]  No samples found: varscan2
+[2020-12-10 18:11:52,784] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2020-12-10 18:11:52,890] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2020-12-10 18:11:53,000] multiqc                                            [DEBUG  ]  No samples found: biscuit
+[2020-12-10 18:11:53,088] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2020-12-10 18:11:53,212] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2020-12-10 18:11:53,330] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2020-12-10 18:11:53,414] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2020-12-10 18:11:53,518] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2020-12-10 18:11:53,639] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2020-12-10 18:11:53,731] multiqc                                            [DEBUG  ]  No samples found: star
+[2020-12-10 18:11:53,841] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2020-12-10 18:11:53,930] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2020-12-10 18:11:54,034] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2020-12-10 18:11:54,137] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2020-12-10 18:11:54,262] multiqc                                            [DEBUG  ]  No samples found: snpsplit
+[2020-12-10 18:11:54,356] multiqc                                            [DEBUG  ]  No samples found: kat
+[2020-12-10 18:11:54,438] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2020-12-10 18:11:54,541] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2020-12-10 18:11:54,625] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2020-12-10 18:11:54,733] multiqc                                            [DEBUG  ]  No samples found: cutadapt
+[2020-12-10 18:11:54,818] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2020-12-10 18:11:54,914] multiqc                                            [DEBUG  ]  No samples found: kaiju
+[2020-12-10 18:11:55,017] multiqc                                            [DEBUG  ]  No samples found: kraken
+[2020-12-10 18:11:55,111] multiqc                                            [DEBUG  ]  No samples found: malt
+[2020-12-10 18:11:55,205] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2020-12-10 18:11:55,293] multiqc                                            [DEBUG  ]  No samples found: sickle
+[2020-12-10 18:11:55,384] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2020-12-10 18:11:55,475] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2020-12-10 18:11:55,561] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2020-12-10 18:11:55,671] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2020-12-10 18:11:55,782] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2020-12-10 18:11:55,887] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2020-12-10 18:11:56,062] multiqc.modules.fastqc.fastqc                      [WARNING]  Couldn't read 'trim_Arenosa4_R1_1U_fastqc.zip' - Bad zip file
+[2020-12-10 18:11:56,063] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Bad zip file error:
+File is not a zip file
+[2020-12-10 18:11:56,129] multiqc.modules.fastqc.fastqc                      [WARNING]  Couldn't read 'trim_Arenosa4_R1_2U_fastqc.zip' - Bad zip file
+[2020-12-10 18:11:56,130] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Bad zip file error:
+File is not a zip file
+[2020-12-10 18:11:56,223] multiqc.modules.fastqc.fastqc                      [WARNING]  Couldn't read 'trim_Arenosa5_R1_1U_fastqc.zip' - Bad zip file
+[2020-12-10 18:11:56,223] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Bad zip file error:
+File is not a zip file
+[2020-12-10 18:11:56,535] multiqc.modules.fastqc.fastqc                      [WARNING]  Couldn't read 'trim_Arenosa5_R1_2U_fastqc.zip' - Bad zip file
+[2020-12-10 18:11:56,536] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Bad zip file error:
+File is not a zip file
+[2020-12-10 18:11:56,574] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 26 reports
+[2020-12-10 18:11:57,683] multiqc                                            [DEBUG  ]  No samples found: pycoqc
+[2020-12-10 18:11:57,776] multiqc                                            [DEBUG  ]  No samples found: minionqc
+[2020-12-10 18:11:57,869] multiqc                                            [DEBUG  ]  No samples found: multivcfanalyzer
+[2020-12-10 18:11:57,966] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2020-12-10 18:11:58,067] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2020-12-10 18:11:58,163] multiqc                                            [DEBUG  ]  No samples found: interop
+[2020-12-10 18:11:58,250] multiqc                                            [DEBUG  ]  No samples found: ivar
+[2020-12-10 18:11:58,356] multiqc                                            [DEBUG  ]  No samples found: flash
+[2020-12-10 18:11:58,444] multiqc                                            [DEBUG  ]  No samples found: seqyclean
+[2020-12-10 18:11:58,562] multiqc                                            [INFO   ]  Compressing plot data
+[2020-12-10 18:11:59,003] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2020-12-10 18:11:59,003] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2020-12-10 18:11:59,003] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpw827ufd9/multiqc_data' to '/mnt/storage-brno3-cerit/nfs4/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/workdir/p2m1m2result/logstat/multiqc_data'
+[2020-12-10 18:12:04,502] multiqc                                            [INFO   ]  MultiQC complete

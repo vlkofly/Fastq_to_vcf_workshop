@@ -1,0 +1,19 @@
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz
+INFO  13:11:11,581 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:11:11,588 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  13:11:11,593 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  13:11:11,594 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  13:11:11,594 HelpFormatter - [Wed Dec 02 13:11:11 CET 2020] Executing on Linux 4.19.0-8-amd64 amd64 
+INFO  13:11:11,598 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  13:11:11,603 HelpFormatter - Program Args: -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_4scaffold_6arenosa.bipassed.vcf.gz -o scaffold_4scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals 
+INFO  13:11:11,615 HelpFormatter - Executing as vlkofly@glados12.cerit-sc.cz on Linux 4.19.0-8-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  13:11:11,619 HelpFormatter - Date/Time: 2020/12/02 13:11:11 
+INFO  13:11:11,620 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:11:11,620 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:11:11,679 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  13:11:12,242 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  13:11:29,289 IntervalUtils - Initial include intervals span 6227428 loci; exclude intervals span 5389771 loci 
+INFO  13:11:29,293 IntervalUtils - Excluding 347545 loci from original intervals (5.58% reduction) 
+INFO  13:11:29,341 IntervalUtils - Processing 5879883 bp from intervals 
+WARN  13:11:29,391 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  13:11:29,662 GenomeAnalysisEngine - Preparing for traversal 

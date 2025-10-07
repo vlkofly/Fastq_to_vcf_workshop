@@ -1,0 +1,26 @@
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz
+INFO  13:10:47,903 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:10:47,970 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  13:10:47,984 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  13:10:47,984 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  13:10:47,985 HelpFormatter - [Wed Dec 02 13:10:47 CET 2020] Executing on Linux 4.19.0-8-amd64 amd64 
+INFO  13:10:47,985 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  13:10:47,999 HelpFormatter - Program Args: -T VariantFiltration -R JIC_reference/alygenomes.fasta -V scaffold_9scaffold_6arenosa.bisel.vcf.gz -o scaffold_9scaffold_6arenosa.bifilt.vcf.gz -filter QD < 2.0 --filterName QD -filter FS > 60.0 --filterName FS -filter MQ < 40.0 --filterName MQ -filter MQRankSum < -12.5 --filterName MQRS -filter ReadPosRankSum < -8.0 --filterName RPRS -filter SOR > 3.0 --filterName SOR -nt 1 
+INFO  13:10:48,025 HelpFormatter - Executing as vlkofly@glados12.cerit-sc.cz on Linux 4.19.0-8-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  13:10:48,042 HelpFormatter - Date/Time: 2020/12/02 13:10:47 
+INFO  13:10:48,043 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:10:48,043 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:10:48,167 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  13:10:48,883 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+WARN  13:10:49,192 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  13:10:49,963 GenomeAnalysisEngine - Preparing for traversal 
+INFO  13:10:49,984 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  13:10:49,987 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  13:10:49,988 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  13:10:49,988 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+INFO  13:10:50,906 ProgressMeter -            done         0.0     0.0 s      10.5 d      100.0%     0.0 s       0.0 s 
+INFO  13:10:50,907 ProgressMeter - Total runtime 0.92 secs, 0.02 min, 0.00 hours 
+------------------------------------------------------------------------------------------
+Done. There were 1 WARN messages, the first 1 are repeated below.
+WARN  13:10:49,192 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+------------------------------------------------------------------------------------------

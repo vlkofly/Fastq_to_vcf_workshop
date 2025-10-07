@@ -1,0 +1,149 @@
+Vcf with all sites not supplied, only snps will be filtered!
+qsub -v 'vcf_all=blablabla.vcf.gz'
+default outdir used
+Specify reference full path, default reference used instead
+qsub -v '/storage/brno3-cerit/home/filip_kolar/JIC_reference/alygenomes.fasta'
+Specify full path to scaffold list to run across in parallel
+if not specified default for lyrata is used
+one scaffold/chromosome per line
+full version filtering run
+started at Wed Dec  2 13:10:12 CET 2020
+output dir created
+cp: cannot stat '/storage/brno3-cerit/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/vcf_variants/no': No such file or directory
+cp: cannot stat '/storage/brno3-cerit/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/vcf_variants/no.tbi': No such file or directory
+data imported succesfully at Wed Dec  2 13:10:16 CET 2020:
+Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals
+Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals
+JIC_reference
+four.fold.degenerate.sites.GATK.intervals
+lyrata_parallel_scaffold_list.txt
+scaffold_6arenosa.vcf.gz
+scaffold_6arenosa.vcf.gz.tbi
+bisnp filtered in parallel Wed Dec  2 13:10:51 CET 2020
+biallelic snps passing filter exported at Wed Dec  2 13:11:03 CET 2020
+starting with fourfold selection
+/usr/bin/bash: line 1: 31453 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_2scaffold_6arenosa.bipassed.vcf.gz -o scaffold_2scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_2scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31457 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_3scaffold_6arenosa.bipassed.vcf.gz -o scaffold_3scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_3scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31377 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_1scaffold_6arenosa.bipassed.vcf.gz -o scaffold_1scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_1scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31523 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_7scaffold_6arenosa.bipassed.vcf.gz -o scaffold_7scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_7scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31485 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_4scaffold_6arenosa.bipassed.vcf.gz -o scaffold_4scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_4scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31507 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_5scaffold_6arenosa.bipassed.vcf.gz -o scaffold_5scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_5scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31526 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_6scaffold_6arenosa.bipassed.vcf.gz -o scaffold_6scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_6scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31521 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_9scaffold_6arenosa.bipassed.vcf.gz -o scaffold_9scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_9scaffold_6arenosa.snps.fourfold.vcf.gz.log
+/usr/bin/bash: line 1: 31519 Killed                  java -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_8scaffold_6arenosa.bipassed.vcf.gz -o scaffold_8scaffold_6arenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals &> scaffold_8scaffold_6arenosa.snps.fourfold.vcf.gz.log
+rm: cannot remove 'scaffold_6arenosa.snps.fourfold.vcf.gz': No such file or directory
+bisnp fourfold exported in parallel and merged at Wed Dec 2 13:11:32 CET 2020
+rm: cannot remove 'scaffold_6arenosa.snps.fourfold.vcf.gz*': No such file or directory
+all sites not supplied, only snps were filtered!
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 3.7-0-gcfedb67): 
+##### ERROR
+##### ERROR This means that one or more arguments or inputs in your command are incorrect.
+##### ERROR The error message below tells you what is the problem.
+##### ERROR
+##### ERROR If the problem is an invalid argument, please check the online documentation guide
+##### ERROR (or rerun your command with --help) to view allowable command-line arguments for this tool.
+##### ERROR
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions https://software.broadinstitute.org/gatk
+##### ERROR
+##### ERROR Please do NOT post this error to the GATK forum unless you have really tried to fix it yourself.
+##### ERROR
+##### ERROR MESSAGE: Invalid argument value 'scaffold_2scaffold_6arenosa.bipassed.vcf.gz' at position 6.
+##### ERROR Invalid argument value 'scaffold_3scaffold_6arenosa.bipassed.vcf.gz' at position 7.
+##### ERROR Invalid argument value 'scaffold_4scaffold_6arenosa.bipassed.vcf.gz' at position 8.
+##### ERROR Invalid argument value 'scaffold_5scaffold_6arenosa.bipassed.vcf.gz' at position 9.
+##### ERROR Invalid argument value 'scaffold_6scaffold_6arenosa.bipassed.vcf.gz' at position 10.
+##### ERROR Invalid argument value 'scaffold_7scaffold_6arenosa.bipassed.vcf.gz' at position 11.
+##### ERROR Invalid argument value 'scaffold_8scaffold_6arenosa.bipassed.vcf.gz' at position 12.
+##### ERROR Invalid argument value 'scaffold_9scaffold_6arenosa.bipassed.vcf.gz' at position 13.
+##### ERROR Invalid argument value 'scaffold_2scaffold_6arenosa.bipassed.vcf.gz' at position 20.
+##### ERROR Invalid argument value 'scaffold_3scaffold_6arenosa.bipassed.vcf.gz' at position 21.
+##### ERROR Invalid argument value 'scaffold_4scaffold_6arenosa.bipassed.vcf.gz' at position 22.
+##### ERROR Invalid argument value 'scaffold_5scaffold_6arenosa.bipassed.vcf.gz' at position 23.
+##### ERROR Invalid argument value 'scaffold_6scaffold_6arenosa.bipassed.vcf.gz' at position 24.
+##### ERROR Invalid argument value 'scaffold_7scaffold_6arenosa.bipassed.vcf.gz' at position 25.
+##### ERROR Invalid argument value 'scaffold_8scaffold_6arenosa.bipassed.vcf.gz' at position 26.
+##### ERROR Invalid argument value 'scaffold_9scaffold_6arenosa.bipassed.vcf.gz' at position 27.
+##### ERROR ------------------------------------------------------------------------------------------
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 3.7-0-gcfedb67): 
+##### ERROR
+##### ERROR This means that one or more arguments or inputs in your command are incorrect.
+##### ERROR The error message below tells you what is the problem.
+##### ERROR
+##### ERROR If the problem is an invalid argument, please check the online documentation guide
+##### ERROR (or rerun your command with --help) to view allowable command-line arguments for this tool.
+##### ERROR
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions https://software.broadinstitute.org/gatk
+##### ERROR
+##### ERROR Please do NOT post this error to the GATK forum unless you have really tried to fix it yourself.
+##### ERROR
+##### ERROR MESSAGE: Invalid argument value 'scaffold_2scaffold_6arenosa.bipassed.vcf.gz' at position 6.
+##### ERROR Invalid argument value 'scaffold_3scaffold_6arenosa.bipassed.vcf.gz' at position 7.
+##### ERROR Invalid argument value 'scaffold_4scaffold_6arenosa.bipassed.vcf.gz' at position 8.
+##### ERROR Invalid argument value 'scaffold_5scaffold_6arenosa.bipassed.vcf.gz' at position 9.
+##### ERROR Invalid argument value 'scaffold_6scaffold_6arenosa.bipassed.vcf.gz' at position 10.
+##### ERROR Invalid argument value 'scaffold_7scaffold_6arenosa.bipassed.vcf.gz' at position 11.
+##### ERROR Invalid argument value 'scaffold_8scaffold_6arenosa.bipassed.vcf.gz' at position 12.
+##### ERROR Invalid argument value 'scaffold_9scaffold_6arenosa.bipassed.vcf.gz' at position 13.
+##### ERROR Invalid argument value 'scaffold_2scaffold_6arenosa.bipassed.vcf.gz' at position 17.
+##### ERROR Invalid argument value 'scaffold_3scaffold_6arenosa.bipassed.vcf.gz' at position 18.
+##### ERROR Invalid argument value 'scaffold_4scaffold_6arenosa.bipassed.vcf.gz' at position 19.
+##### ERROR Invalid argument value 'scaffold_5scaffold_6arenosa.bipassed.vcf.gz' at position 20.
+##### ERROR Invalid argument value 'scaffold_6scaffold_6arenosa.bipassed.vcf.gz' at position 21.
+##### ERROR Invalid argument value 'scaffold_7scaffold_6arenosa.bipassed.vcf.gz' at position 22.
+##### ERROR Invalid argument value 'scaffold_8scaffold_6arenosa.bipassed.vcf.gz' at position 23.
+##### ERROR Invalid argument value 'scaffold_9scaffold_6arenosa.bipassed.vcf.gz' at position 24.
+##### ERROR ------------------------------------------------------------------------------------------
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1756639.cerit-pbs.cerit-sc.cz
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 3.7-0-gcfedb67): 
+##### ERROR
+##### ERROR This means that one or more arguments or inputs in your command are incorrect.
+##### ERROR The error message below tells you what is the problem.
+##### ERROR
+##### ERROR If the problem is an invalid argument, please check the online documentation guide
+##### ERROR (or rerun your command with --help) to view allowable command-line arguments for this tool.
+##### ERROR
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions https://software.broadinstitute.org/gatk
+##### ERROR
+##### ERROR Please do NOT post this error to the GATK forum unless you have really tried to fix it yourself.
+##### ERROR
+##### ERROR MESSAGE: Invalid argument value 'scaffold_2scaffold_6arenosa.bipassed.vcf.gz' at position 6.
+##### ERROR Invalid argument value 'scaffold_3scaffold_6arenosa.bipassed.vcf.gz' at position 7.
+##### ERROR Invalid argument value 'scaffold_4scaffold_6arenosa.bipassed.vcf.gz' at position 8.
+##### ERROR Invalid argument value 'scaffold_5scaffold_6arenosa.bipassed.vcf.gz' at position 9.
+##### ERROR Invalid argument value 'scaffold_6scaffold_6arenosa.bipassed.vcf.gz' at position 10.
+##### ERROR Invalid argument value 'scaffold_7scaffold_6arenosa.bipassed.vcf.gz' at position 11.
+##### ERROR Invalid argument value 'scaffold_8scaffold_6arenosa.bipassed.vcf.gz' at position 12.
+##### ERROR Invalid argument value 'scaffold_9scaffold_6arenosa.bipassed.vcf.gz' at position 13.
+##### ERROR Invalid argument value 'scaffold_2scaffold_6arenosa.bipassed.vcf.gz' at position 18.
+##### ERROR Invalid argument value 'scaffold_3scaffold_6arenosa.bipassed.vcf.gz' at position 19.
+##### ERROR Invalid argument value 'scaffold_4scaffold_6arenosa.bipassed.vcf.gz' at position 20.
+##### ERROR Invalid argument value 'scaffold_5scaffold_6arenosa.bipassed.vcf.gz' at position 21.
+##### ERROR Invalid argument value 'scaffold_6scaffold_6arenosa.bipassed.vcf.gz' at position 22.
+##### ERROR Invalid argument value 'scaffold_7scaffold_6arenosa.bipassed.vcf.gz' at position 23.
+##### ERROR Invalid argument value 'scaffold_8scaffold_6arenosa.bipassed.vcf.gz' at position 24.
+##### ERROR Invalid argument value 'scaffold_9scaffold_6arenosa.bipassed.vcf.gz' at position 25.
+##### ERROR ------------------------------------------------------------------------------------------
+rm: cannot remove 'scaffold_1scaffold_6arenosa.bipassed.dp8.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_1scaffold_6arenosa.bipassed.dp8nc.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_2scaffold_6arenosa.bipassed.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_3scaffold_6arenosa.bipassed.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_4scaffold_6arenosa.bipassed.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_5scaffold_6arenosa.bipassed.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_6scaffold_6arenosa.bipassed.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_7scaffold_6arenosa.bipassed.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_8scaffold_6arenosa.bipassed.vcf.gz': No such file or directory
+rm: cannot remove 'scaffold_9scaffold_6arenosa.bipassed.vcf.gz*': No such file or directory
+
+gzip: scaffold_7scaffold_6arenosa.snps.fourfold.vcf.gz: unexpected end of file
+
+**********************************************************************************************************
+
+The SCRATCHes have been SUCCESSFULLY cleaned...

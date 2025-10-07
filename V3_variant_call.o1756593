@@ -1,0 +1,113 @@
+specify output name, default name used instead
+qsub -v 'outvcf=blablabla.vcf.gz'
+specify reference full path, default reference used instead
+qsub -v '/storage/brno3-cerit/home/filip_kolar/JIC_reference/alygenomes.fasta'
+specify full path to scaffold list to run across in parallel
+if not specified default for lyrata is used
+one scaffold/chromosome per line
+output dir created
+copying done Wed Dec  2 11:52:07 CET 2020
+BAB_12da_HC.g.vcf.gz
+BAB_12da_HC.g.vcf.gz.tbi
+HRA_01ta_HC.g.vcf.gz
+HRA_01ta_HC.g.vcf.gz.tbi
+JIC_reference
+SUB_03da_HC.g.vcf.gz
+SUB_03da_HC.g.vcf.gz.tbi
+TBG_06ta_HC.g.vcf.gz
+TBG_06ta_HC.g.vcf.gz.tbi
+ZEP_07da_HC.g.vcf.gz
+ZEP_07da_HC.g.vcf.gz.tbi
+lyrata_parallel_scaffold_list.txt
+lyrata_scaffolds_rest.intervals
+genotyping 1 samples from 5 /storage/brno3-cerit/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/sample.list.txt samples supplied
+scaffold_1.finished
+/usr/bin/bash: line 1:  4693 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_1 -o scaffold_1sample.list.txt.vcf.gz &> scaffold_1sample.list.txt.vcf.gz.log
+scaffold_8.finished
+/usr/bin/bash: line 1:  4707 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_8 -o scaffold_8sample.list.txt.vcf.gz &> scaffold_8sample.list.txt.vcf.gz.log
+scaffold_9.finished
+/usr/bin/bash: line 1:  4708 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_9 -o scaffold_9sample.list.txt.vcf.gz &> scaffold_9sample.list.txt.vcf.gz.log
+scaffold_2.finished
+/usr/bin/bash: line 1:  4703 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_2 -o scaffold_2sample.list.txt.vcf.gz &> scaffold_2sample.list.txt.vcf.gz.log
+scaffold_4.finished
+/usr/bin/bash: line 1:  4705 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_4 -o scaffold_4sample.list.txt.vcf.gz &> scaffold_4sample.list.txt.vcf.gz.log
+scaffold_3.finished
+/usr/bin/bash: line 1:  4704 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_3 -o scaffold_3sample.list.txt.vcf.gz &> scaffold_3sample.list.txt.vcf.gz.log
+scaffold_5.finished
+/usr/bin/bash: line 1:  4706 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_5 -o scaffold_5sample.list.txt.vcf.gz &> scaffold_5sample.list.txt.vcf.gz.log
+scaffold_6.finished
+/usr/bin/bash: line 1:  4709 Killed                  java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_6 -o scaffold_6sample.list.txt.vcf.gz &> scaffold_6sample.list.txt.vcf.gz.log
+lyrata_scaffolds_rest.intervals.finished
+scaffold_7.finished
+genotypeGVCF done in parallel for separate scaffolds:
+JIC_reference
+lyrata_parallel_scaffold_list.txt
+lyrata_scaffolds_rest.intervals
+lyrata_scaffolds_restsample.list.txt.vcf.gz
+lyrata_scaffolds_restsample.list.txt.vcf.gz.log
+lyrata_scaffolds_restsample.list.txt.vcf.gz.tbi
+scaffold_1sample.list.txt.vcf.gz
+scaffold_1sample.list.txt.vcf.gz.log
+scaffold_2sample.list.txt.vcf.gz
+scaffold_2sample.list.txt.vcf.gz.log
+scaffold_3sample.list.txt.vcf.gz
+scaffold_3sample.list.txt.vcf.gz.log
+scaffold_4sample.list.txt.vcf.gz
+scaffold_4sample.list.txt.vcf.gz.log
+scaffold_5sample.list.txt.vcf.gz
+scaffold_5sample.list.txt.vcf.gz.log
+scaffold_6sample.list.txt.vcf.gz
+scaffold_6sample.list.txt.vcf.gz.log
+scaffold_7sample.list.txt.vcf.gz
+scaffold_7sample.list.txt.vcf.gz.log
+scaffold_7sample.list.txt.vcf.gz.tbi
+scaffold_8sample.list.txt.vcf.gz
+scaffold_8sample.list.txt.vcf.gz.log
+scaffold_9sample.list.txt.vcf.gz
+scaffold_9sample.list.txt.vcf.gz.log
+-V lyrata_scaffolds_restsample.list.txt.vcf.gz -V scaffold_1sample.list.txt.vcf.gz -V scaffold_2sample.list.txt.vcf.gz -V scaffold_3sample.list.txt.vcf.gz -V scaffold_4sample.list.txt.vcf.gz -V scaffold_5sample.list.txt.vcf.gz -V scaffold_6sample.list.txt.vcf.gz -V scaffold_7sample.list.txt.vcf.gz -V scaffold_8sample.list.txt.vcf.gz -V scaffold_9sample.list.txt.vcf.gz
+INFO  11:53:09,930 HelpFormatter - ------------------------------------------------------- 
+INFO  11:53:09,948 HelpFormatter - Program Name: org.broadinstitute.gatk.tools.CatVariants 
+INFO  11:53:09,951 HelpFormatter - Program Args: -R JIC_reference/alygenomes.fasta -V lyrata_scaffolds_restsample.list.txt.vcf.gz -V scaffold_1sample.list.txt.vcf.gz -V scaffold_2sample.list.txt.vcf.gz -V scaffold_3sample.list.txt.vcf.gz -V scaffold_4sample.list.txt.vcf.gz -V scaffold_5sample.list.txt.vcf.gz -V scaffold_6sample.list.txt.vcf.gz -V scaffold_7sample.list.txt.vcf.gz -V scaffold_8sample.list.txt.vcf.gz -V scaffold_9sample.list.txt.vcf.gz -assumeSorted -out sample.list.txt.vcf.gz 
+INFO  11:53:09,958 HelpFormatter - Executing as vlkofly@zenon8.cerit-sc.cz on Linux 4.19.0-6-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  11:53:09,958 HelpFormatter - Date/Time: 2020/12/02 11:53:09 
+INFO  11:53:09,959 HelpFormatter - ------------------------------------------------------- 
+INFO  11:53:09,959 HelpFormatter - ------------------------------------------------------- 
+.##### ERROR --
+##### ERROR stack trace 
+htsjdk.tribble.TribbleException$MalformedFeatureFile: Unable to parse header with error: null, for input source: /scratch.ssd/vlkofly/job_1756593.cerit-pbs.cerit-sc.cz/scaffold_1sample.list.txt.vcf.gz
+	at htsjdk.tribble.TribbleIndexedFeatureReader.readHeader(TribbleIndexedFeatureReader.java:230)
+	at htsjdk.tribble.TribbleIndexedFeatureReader.<init>(TribbleIndexedFeatureReader.java:96)
+	at htsjdk.tribble.TribbleIndexedFeatureReader.<init>(TribbleIndexedFeatureReader.java:107)
+	at htsjdk.tribble.AbstractFeatureReader.getFeatureReader(AbstractFeatureReader.java:90)
+	at htsjdk.tribble.AbstractFeatureReader.getFeatureReader(AbstractFeatureReader.java:67)
+	at org.broadinstitute.gatk.tools.CatVariants.getFeatureReader(CatVariants.java:188)
+	at org.broadinstitute.gatk.tools.CatVariants.execute(CatVariants.java:286)
+	at org.broadinstitute.gatk.utils.commandline.CommandLineProgram.start(CommandLineProgram.java:256)
+	at org.broadinstitute.gatk.utils.commandline.CommandLineProgram.start(CommandLineProgram.java:158)
+	at org.broadinstitute.gatk.tools.CatVariants.main(CatVariants.java:318)
+Caused by: java.io.EOFException
+	at java.util.zip.GZIPInputStream.readUByte(GZIPInputStream.java:268)
+	at java.util.zip.GZIPInputStream.readUShort(GZIPInputStream.java:258)
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:164)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at htsjdk.tribble.TribbleIndexedFeatureReader.readHeader(TribbleIndexedFeatureReader.java:224)
+	... 9 more
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A GATK RUNTIME ERROR has occurred (version 3.7-0-gcfedb67):
+##### ERROR
+##### ERROR This might be a bug. Please check the documentation guide to see if this is a known problem.
+##### ERROR If not, please post the error message, with stack trace, to the GATK forum.
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions https://software.broadinstitute.org/gatk
+##### ERROR
+##### ERROR MESSAGE: Unable to parse header with error: null, for input source: /scratch.ssd/vlkofly/job_1756593.cerit-pbs.cerit-sc.cz/scaffold_1sample.list.txt.vcf.gz
+##### ERROR ------------------------------------------------------------------------------------------
+rm: cannot remove '*g.vcf*': No such file or directory
+cp: -r not specified; omitting directory '/scratch.ssd/vlkofly/job_1756593.cerit-pbs.cerit-sc.cz/JIC_reference'
+
+**********************************************************************************************************
+
+WARNING: The CLEAN_SCRATCH is set to false -- scratch directories have NOT BEEN cleaned!
+Please, copy the data manually from the host zenon8.cerit-sc.cz and CLEAN the scratches.

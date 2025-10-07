@@ -1,0 +1,117 @@
+INFO  11:59:01,913 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  11:59:01,954 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  11:59:01,954 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  11:59:01,959 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  11:59:01,959 HelpFormatter - [Wed Dec 02 11:59:01 CET 2020] Executing on Linux 4.19.0-8-amd64 amd64 
+INFO  11:59:01,959 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  11:59:01,962 HelpFormatter - Program Args: -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V TBG_06ta_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_3 -o scaffold_3arenosa.vcf.gz 
+INFO  11:59:01,988 HelpFormatter - Executing as vlkofly@black1.cerit-sc.cz on Linux 4.19.0-8-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  11:59:02,006 HelpFormatter - Date/Time: 2020/12/02 11:59:01 
+INFO  11:59:02,006 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  11:59:02,010 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  11:59:02,190 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  11:59:04,175 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  11:59:07,308 IntervalUtils - Processing 24464547 bp from intervals 
+WARN  11:59:07,310 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,312 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,313 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,313 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,314 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  11:59:08,300 GenomeAnalysisEngine - Preparing for traversal 
+INFO  11:59:08,303 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  11:59:08,303 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  11:59:08,314 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  11:59:08,314 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+WARN  11:59:11,071 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  11:59:11,071 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  11:59:11,072 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+INFO  11:59:11,072 GenotypeGVCFs - Notice that the -ploidy parameter is ignored in GenotypeGVCFs tool as this is automatically determined by the input variant files 
+INFO  11:59:38,581 ProgressMeter - scaffold_3:1125601   1000000.0    30.0 s      30.0 s        4.6%    10.9 m      10.4 m 
+INFO  12:00:09,058 ProgressMeter - scaffold_3:1337601   1000000.0    60.0 s      60.0 s        5.5%    18.3 m      17.3 m 
+INFO  12:00:39,592 ProgressMeter - scaffold_3:1546801   1000000.0    91.0 s      91.0 s        6.3%    24.0 m      22.5 m 
+INFO  12:01:09,825 ProgressMeter - scaffold_3:1729401   1000000.0     2.0 m       2.0 m        7.1%    28.5 m      26.5 m 
+INFO  12:01:40,002 ProgressMeter - scaffold_3:2351001   2000000.0     2.5 m      75.0 s        9.6%    26.2 m      23.7 m 
+INFO  12:02:10,059 ProgressMeter - scaffold_3:3058801   3000000.0     3.0 m      60.0 s       12.5%    24.1 m      21.1 m 
+INFO  12:02:40,126 ProgressMeter - scaffold_3:3741501   3000000.0     3.5 m      70.0 s       15.3%    23.0 m      19.5 m 
+INFO  12:03:10,183 ProgressMeter - scaffold_3:4123401   4000000.0     4.0 m      60.0 s       16.9%    23.8 m      19.8 m 
+INFO  12:03:40,287 ProgressMeter - scaffold_3:4359901   4000000.0     4.5 m      67.0 s       17.8%    25.3 m      20.8 m 
+INFO  12:04:10,399 ProgressMeter - scaffold_3:4552001   4000000.0     5.0 m      75.0 s       18.6%    27.1 m      22.0 m 
+INFO  12:04:40,591 ProgressMeter - scaffold_3:5287001   5000000.0     5.5 m      66.0 s       21.6%    25.6 m      20.1 m 
+INFO  12:05:10,907 ProgressMeter - scaffold_3:5712201   5000000.0     6.0 m      72.0 s       23.3%    25.8 m      19.8 m 
+INFO  12:05:41,000 ProgressMeter - scaffold_3:5942601   5000000.0     6.5 m      78.0 s       24.3%    26.9 m      20.4 m 
+INFO  12:06:11,157 ProgressMeter - scaffold_3:6111401   6000000.0     7.0 m      70.0 s       25.0%    28.2 m      21.1 m 
+INFO  12:06:41,317 ProgressMeter - scaffold_3:6340201   6000000.0     7.5 m      75.0 s       25.9%    29.1 m      21.5 m 
+INFO  12:07:11,474 ProgressMeter - scaffold_3:6556401   6000000.0     8.1 m      80.0 s       26.8%    30.0 m      22.0 m 
+INFO  12:07:41,593 ProgressMeter - scaffold_3:6757101   6000000.0     8.6 m      85.0 s       27.6%    31.0 m      22.4 m 
+INFO  12:08:11,633 ProgressMeter - scaffold_3:6994201   6000000.0     9.1 m      90.0 s       28.6%    31.7 m      22.6 m 
+INFO  12:08:41,677 ProgressMeter - scaffold_3:7210101   7000000.0     9.6 m      81.0 s       29.5%    32.4 m      22.9 m 
+INFO  12:09:11,781 ProgressMeter - scaffold_3:7436201   7000000.0    10.1 m      86.0 s       30.4%    33.1 m      23.0 m 
+INFO  12:09:42,003 ProgressMeter - scaffold_3:7669501   7000000.0    10.6 m      90.0 s       31.3%    33.7 m      23.1 m 
+INFO  12:10:12,084 ProgressMeter - scaffold_3:7902201   7000000.0    11.1 m      94.0 s       32.3%    34.2 m      23.2 m 
+INFO  12:10:42,175 ProgressMeter - scaffold_3:8130401   8000000.0    11.6 m      86.0 s       33.2%    34.8 m      23.2 m 
+INFO  12:11:12,258 ProgressMeter - scaffold_3:8360601   8000000.0    12.1 m      90.0 s       34.2%    35.3 m      23.2 m 
+INFO  12:11:42,404 ProgressMeter - scaffold_3:8591401   8000000.0    12.6 m      94.0 s       35.1%    35.8 m      23.2 m 
+INFO  12:12:12,644 ProgressMeter - scaffold_3:8739601   8000000.0    13.1 m      98.0 s       35.7%    36.6 m      23.5 m 
+INFO  12:12:42,778 ProgressMeter - scaffold_3:8949701   8000000.0    13.6 m     101.0 s       36.6%    37.1 m      23.5 m 
+INFO  12:13:12,950 ProgressMeter - scaffold_3:9090901   9000000.0    14.1 m      93.0 s       37.2%    37.9 m      23.8 m 
+INFO  12:13:43,042 ProgressMeter - scaffold_3:9324301   9000000.0    14.6 m      97.0 s       38.1%    38.2 m      23.7 m 
+INFO  12:14:13,360 ProgressMeter - scaffold_3:9536701   9000000.0    15.1 m     100.0 s       39.0%    38.7 m      23.6 m 
+INFO  12:14:43,750 ProgressMeter - scaffold_3:9894701   9000000.0    15.6 m     103.0 s       40.4%    38.5 m      22.9 m 
+INFO  12:15:13,928 ProgressMeter - scaffold_3:10540201       1.0E7    16.1 m      96.0 s       43.1%    37.3 m      21.2 m 
+INFO  12:15:44,143 ProgressMeter - scaffold_3:10932001       1.0E7    16.6 m      99.0 s       44.7%    37.1 m      20.5 m 
+INFO  12:16:14,267 ProgressMeter - scaffold_3:11115201       1.1E7    17.1 m      93.0 s       45.4%    37.6 m      20.5 m 
+INFO  12:16:44,425 ProgressMeter - scaffold_3:11329701       1.1E7    17.6 m      96.0 s       46.3%    38.0 m      20.4 m 
+INFO  12:17:14,589 ProgressMeter - scaffold_3:11563901       1.1E7    18.1 m      98.0 s       47.3%    38.3 m      20.2 m 
+INFO  12:17:44,758 ProgressMeter - scaffold_3:11736701       1.1E7    18.6 m     101.0 s       48.0%    38.8 m      20.2 m 
+INFO  12:18:14,908 ProgressMeter - scaffold_3:11968801       1.1E7    19.1 m     104.0 s       48.9%    39.0 m      19.9 m 
+INFO  12:18:45,001 ProgressMeter - scaffold_3:12189001       1.2E7    19.6 m      98.0 s       49.8%    39.3 m      19.7 m 
+INFO  12:19:15,064 ProgressMeter - scaffold_3:12419701       1.2E7    20.1 m     100.0 s       50.8%    39.6 m      19.5 m 
+INFO  12:19:45,161 ProgressMeter - scaffold_3:12652001       1.2E7    20.6 m     103.0 s       51.7%    39.8 m      19.2 m 
+INFO  12:20:15,300 ProgressMeter - scaffold_3:12888701       1.2E7    21.1 m     105.0 s       52.7%    40.1 m      19.0 m 
+INFO  12:20:45,345 ProgressMeter - scaffold_3:13121801       1.3E7    21.6 m      99.0 s       53.6%    40.3 m      18.7 m 
+INFO  12:21:15,383 ProgressMeter - scaffold_3:13363901       1.3E7    22.1 m     102.0 s       54.6%    40.5 m      18.4 m 
+INFO  12:21:45,523 ProgressMeter - scaffold_3:13602901       1.3E7    22.6 m     104.0 s       55.6%    40.7 m      18.1 m 
+INFO  12:22:15,636 ProgressMeter - scaffold_3:13833201       1.3E7    23.1 m     106.0 s       56.5%    40.9 m      17.8 m 
+INFO  12:22:45,692 ProgressMeter - scaffold_3:14058501       1.4E7    23.6 m     101.0 s       57.5%    41.1 m      17.5 m 
+INFO  12:23:15,752 ProgressMeter - scaffold_3:14287301       1.4E7    24.1 m     103.0 s       58.4%    41.3 m      17.2 m 
+INFO  12:23:45,904 ProgressMeter - scaffold_3:14519001       1.4E7    24.6 m     105.0 s       59.3%    41.5 m      16.9 m 
+INFO  12:24:16,086 ProgressMeter - scaffold_3:14758101       1.4E7    25.1 m     107.0 s       60.3%    41.6 m      16.5 m 
+INFO  12:24:46,240 ProgressMeter - scaffold_3:14991401       1.4E7    25.6 m     109.0 s       61.3%    41.8 m      16.2 m 
+INFO  12:25:16,309 ProgressMeter - scaffold_3:15216001       1.5E7    26.1 m     104.0 s       62.2%    42.0 m      15.9 m 
+INFO  12:25:46,467 ProgressMeter - scaffold_3:15445101       1.5E7    26.6 m     106.0 s       63.1%    42.2 m      15.6 m 
+INFO  12:26:16,695 ProgressMeter - scaffold_3:15676101       1.5E7    27.1 m     108.0 s       64.1%    42.3 m      15.2 m 
+INFO  12:26:46,783 ProgressMeter - scaffold_3:15906101       1.5E7    27.6 m     110.0 s       65.0%    42.5 m      14.9 m 
+INFO  12:27:16,874 ProgressMeter - scaffold_3:16128201       1.6E7    28.1 m     105.0 s       65.9%    42.7 m      14.5 m 
+INFO  12:27:47,040 ProgressMeter - scaffold_3:16322401       1.6E7    28.6 m     107.0 s       66.7%    42.9 m      14.3 m 
+INFO  12:28:17,296 ProgressMeter - scaffold_3:16550201       1.6E7    29.1 m     109.0 s       67.6%    43.1 m      13.9 m 
+INFO  12:28:47,410 ProgressMeter - scaffold_3:16782501       1.6E7    29.7 m     111.0 s       68.6%    43.2 m      13.6 m 
+INFO  12:29:17,519 ProgressMeter - scaffold_3:17007101       1.7E7    30.2 m     106.0 s       69.5%    43.4 m      13.2 m 
+INFO  12:29:47,608 ProgressMeter - scaffold_3:17233701       1.7E7    30.7 m     108.0 s       70.4%    43.5 m      12.9 m 
+INFO  12:30:17,746 ProgressMeter - scaffold_3:18309701       1.8E7    31.2 m     103.0 s       74.8%    41.6 m      10.5 m 
+INFO  12:30:47,854 ProgressMeter - scaffold_3:19217001       1.9E7    31.7 m      99.0 s       78.6%    40.3 m       8.6 m 
+INFO  12:31:18,124 ProgressMeter - scaffold_3:19378001       1.9E7    32.2 m     101.0 s       79.2%    40.6 m       8.4 m 
+INFO  12:31:48,433 ProgressMeter - scaffold_3:19577601       1.9E7    32.7 m     103.0 s       80.0%    40.8 m       8.2 m 
+INFO  12:32:18,551 ProgressMeter - scaffold_3:19799701       1.9E7    33.2 m     104.0 s       80.9%    41.0 m       7.8 m 
+INFO  12:32:48,718 ProgressMeter - scaffold_3:20012201       2.0E7    33.7 m     101.0 s       81.8%    41.2 m       7.5 m 
+INFO  12:33:18,812 ProgressMeter - scaffold_3:20262401       2.0E7    34.2 m     102.0 s       82.8%    41.3 m       7.1 m 
+INFO  12:33:48,842 ProgressMeter - scaffold_3:20522401       2.0E7    34.7 m     104.0 s       83.9%    41.3 m       6.7 m 
+INFO  12:34:18,854 ProgressMeter - scaffold_3:20986601       2.0E7    35.2 m     105.0 s       85.8%    41.0 m       5.8 m 
+INFO  12:34:48,857 ProgressMeter - scaffold_3:21809001       2.1E7    35.7 m     101.0 s       89.1%    40.0 m       4.3 m 
+INFO  12:35:18,897 ProgressMeter - scaffold_3:22339201       2.2E7    36.2 m      98.0 s       91.3%    39.6 m       3.4 m 
+INFO  12:35:48,909 ProgressMeter - scaffold_3:22854501       2.2E7    36.7 m     100.0 s       93.4%    39.2 m       2.6 m 
+INFO  12:36:18,925 ProgressMeter - scaffold_3:23373301       2.3E7    37.2 m      96.0 s       95.5%    38.9 m     104.0 s 
+INFO  12:36:48,947 ProgressMeter - scaffold_3:23900201       2.3E7    37.7 m      98.0 s       97.7%    38.6 m      53.0 s 
+INFO  12:37:19,019 ProgressMeter - scaffold_3:24419701       2.4E7    38.2 m      95.0 s       99.8%    38.2 m       4.0 s 
+INFO  12:37:21,970 ProgressMeter -            done   2.4464547E7    38.2 m      93.0 s      100.0%    38.2 m       0.0 s 
+INFO  12:37:21,986 ProgressMeter - Total runtime 2293.68 secs, 38.23 min, 0.64 hours 
+------------------------------------------------------------------------------------------
+Done. There were 8 WARN messages, the first 8 are repeated below.
+WARN  11:59:07,310 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,312 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,313 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,313 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:07,314 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  11:59:11,071 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  11:59:11,071 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  11:59:11,072 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+------------------------------------------------------------------------------------------

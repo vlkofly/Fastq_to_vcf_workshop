@@ -1,0 +1,86 @@
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1807268.cerit-pbs.cerit-sc.cz
+INFO  19:19:27,892 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:19:27,898 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  19:19:27,899 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  19:19:27,899 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  19:19:27,899 HelpFormatter - [Thu Dec 10 19:19:27 CET 2020] Executing on Linux 4.19.0-6-amd64 amd64 
+INFO  19:19:27,899 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  19:19:27,913 HelpFormatter - Program Args: -T VariantFiltration -R JIC_reference/alygenomes.fasta -V scaffold_6arenosa.bisel.vcf.gz -o scaffold_6arenosa.bifilt.vcf.gz -filter QD < 2.0 --filterName QD -filter FS > 60.0 --filterName FS -filter MQ < 40.0 --filterName MQ -filter MQRankSum < -12.5 --filterName MQRS -filter ReadPosRankSum < -8.0 --filterName RPRS -filter SOR > 3.0 --filterName SOR -nt 1 
+INFO  19:19:27,916 HelpFormatter - Executing as vlkofly@zenon19.cerit-sc.cz on Linux 4.19.0-6-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  19:19:27,917 HelpFormatter - Date/Time: 2020/12/10 19:19:27 
+INFO  19:19:27,917 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:19:27,917 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:19:27,959 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  19:19:28,545 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+WARN  19:19:28,855 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  19:19:30,217 GenomeAnalysisEngine - Preparing for traversal 
+INFO  19:19:30,233 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  19:19:30,242 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  19:19:30,243 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  19:19:30,243 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+WARN  19:19:31,881 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:31,917 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,152 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,153 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,265 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,265 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,266 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,267 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,267 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,267 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,310 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,311 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,327 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,328 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,357 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,364 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,377 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,378 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,379 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,380 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,387 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,410 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,463 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,465 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,467 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,468 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,491 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,491 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,527 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,528 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,531 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,532 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,549 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,550 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,550 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,551 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,572 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,572 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,573 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,573 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,796 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,797 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,798 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,798 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,798 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,798 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,799 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,799 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,799 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,800 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,800 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,800 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,801 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,801 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,801 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,801 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,814 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,815 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  19:19:32,815 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  19:19:32,816 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+INFO  19:19:32,832 ProgressMeter -            done        30.0     2.0 s      24.0 h       70.7%     2.0 s       0.0 s 
+INFO  19:19:32,833 ProgressMeter - Total runtime 2.59 secs, 0.04 min, 0.00 hours 
+------------------------------------------------------------------------------------------
+Done. There were 1 WARN messages, the first 1 are repeated below.
+WARN  19:19:28,855 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+------------------------------------------------------------------------------------------

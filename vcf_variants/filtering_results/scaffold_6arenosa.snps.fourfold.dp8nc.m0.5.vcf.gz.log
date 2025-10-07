@@ -1,0 +1,11 @@
+INFO  13:11:42,121 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:11:42,128 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  13:11:42,128 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  13:11:42,129 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  13:11:42,130 HelpFormatter - [Wed Dec 02 13:11:42 CET 2020] Executing on Linux 4.19.0-8-amd64 amd64 
+INFO  13:11:42,130 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  13:11:42,135 HelpFormatter - Program Args: -T SelectVariants -R JIC_reference/alygenomes.fasta -V scaffold_6arenosa.snps.fourfold.dp8nc.vcf.gz --maxNOCALLfraction 0.5 -log scaffold_6arenosa.snps.fourfold.dp8nc.m0.5.vcf.gz.log -o scaffold_6arenosa.snps.fourfold.dp8nc.m0.5.vcf.gz 
+INFO  13:11:42,145 HelpFormatter - Executing as vlkofly@glados12.cerit-sc.cz on Linux 4.19.0-8-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  13:11:42,147 HelpFormatter - Date/Time: 2020/12/02 13:11:42 
+INFO  13:11:42,147 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  13:11:42,147 HelpFormatter - -------------------------------------------------------------------------------- 

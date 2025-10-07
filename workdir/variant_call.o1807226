@@ -1,0 +1,60 @@
+specify reference full path, default reference used instead
+qsub -v '/storage/brno3-cerit/home/filip_kolar/JIC_reference/alygenomes.fasta'
+specify full path to scaffold list to run across in parallel
+if not specified default for lyrata is used
+one scaffold/chromosome per line
+output dir created
+wc: /storage/brno3-cerit/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/workdir/sample.list.txt: No such file or directory
+/var/spool/pbs/mom_priv/jobs/1807226.cerit-pbs.cerit-sc.cz.SC: line 102: /storage/brno3-cerit/home/vlkofly/mockingbird_genomics/fastq_vcf_workshop/workdir/sample.list.txt: No such file or directory
+copying done Thu Dec 10 18:56:06 CET 2020
+JIC_reference
+lyrata_parallel_scaffold_list.txt
+lyrata_scaffolds_rest.intervals
+ls: cannot access '*g.vcf.gz': No such file or directory
+genotyping 1 samples from  samples supplied
+parallel: SIGTERM received. No new jobs will be started.
+parallel: Waiting for these 4 jobs to finish. Send SIGTERM again to stop now.
+parallel: java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta  --max_num_PL_values 1500  -nt 1 -L scaffold_2 -o scaffold_2arenosa.vcf.gz &> scaffold_2arenosa.vcf.gz.log; echo scaffold_2.finished 
+parallel: java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta  --max_num_PL_values 1500  -nt 1 -L scaffold_1 -o scaffold_1arenosa.vcf.gz &> scaffold_1arenosa.vcf.gz.log; echo scaffold_1.finished 
+parallel: java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta  --max_num_PL_values 1500  -nt 1 -L scaffold_4 -o scaffold_4arenosa.vcf.gz &> scaffold_4arenosa.vcf.gz.log; echo scaffold_4.finished 
+parallel: java -XX:ParallelGCThreads=1 -jar /software/gatk/3.7/GenomeAnalysisTK.jar -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta  --max_num_PL_values 1500  -nt 1 -L scaffold_3 -o scaffold_3arenosa.vcf.gz &> scaffold_3arenosa.vcf.gz.log; echo scaffold_3.finished 
+
+**********************************************************************************************************
+
+The SCRATCHes have been SUCCESSFULLY cleaned...
+rm: cannot remove '*g.vcf*': No such file or directory
+genotypeGVCF done in parallel for separate scaffolds:
+-V *arenosa.vcf.gz
+INFO  18:56:18,031 HelpFormatter - ------------------------------------------------------- 
+INFO  18:56:18,055 HelpFormatter - Program Name: org.broadinstitute.gatk.tools.CatVariants 
+INFO  18:56:18,059 HelpFormatter - Program Args: -R JIC_reference/alygenomes.fasta -V *arenosa.vcf.gz -assumeSorted -out arenosa.vcf.gz 
+INFO  18:56:18,077 HelpFormatter - Executing as vlkofly@zenon7.cerit-sc.cz on Linux 4.19.0-6-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  18:56:18,077 HelpFormatter - Date/Time: 2020/12/10 18:56:18 
+INFO  18:56:18,078 HelpFormatter - ------------------------------------------------------- 
+INFO  18:56:18,078 HelpFormatter - ------------------------------------------------------- 
+Usage: java -cp target/GenomeAnalysisTK.jar org.broadinstitute.gatk.tools.CatVariants --reference <reference> --variant <input VCF or BCF file; can specify --variant multiple times> --outputFile <outputFile> [--assumeSorted]
+    The output file must be of the same type as all input files.
+    If the input files are already sorted, then indicate that with --assumeSorted to improve performance.
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 3.7-0-gcfedb67): 
+##### ERROR
+##### ERROR This means that one or more arguments or inputs in your command are incorrect.
+##### ERROR The error message below tells you what is the problem.
+##### ERROR
+##### ERROR If the problem is an invalid argument, please check the online documentation guide
+##### ERROR (or rerun your command with --help) to view allowable command-line arguments for this tool.
+##### ERROR
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions https://software.broadinstitute.org/gatk
+##### ERROR
+##### ERROR Please do NOT post this error to the GATK forum unless you have really tried to fix it yourself.
+##### ERROR
+##### ERROR MESSAGE: Couldn't load provided reference sequence file JIC_reference/alygenomes.fasta
+##### ERROR ------------------------------------------------------------------------------------------
+rm: cannot remove '*g.vcf*': No such file or directory
+cp: cannot stat '/scratch.ssd/vlkofly/job_1807226.cerit-pbs.cerit-sc.cz/*': No such file or directory
+
+**********************************************************************************************************
+
+WARNING: The CLEAN_SCRATCH is set to false -- scratch directories have NOT BEEN cleaned!
+Please, copy the data manually from the host zenon7.cerit-sc.cz and CLEAN the scratches.

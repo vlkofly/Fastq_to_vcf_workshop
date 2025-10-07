@@ -1,0 +1,28 @@
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/scratch.ssd/vlkofly/job_1807268.cerit-pbs.cerit-sc.cz
+INFO  19:20:05,592 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:20:05,596 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  19:20:05,601 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  19:20:05,604 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  19:20:05,604 HelpFormatter - [Thu Dec 10 19:20:05 CET 2020] Executing on Linux 4.19.0-6-amd64 amd64 
+INFO  19:20:05,605 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  19:20:05,609 HelpFormatter - Program Args: -T SelectVariants -R JIC_reference/alygenomes.fasta -V lyrata_scaffolds_restarenosa.bipassed.vcf.gz -o lyrata_scaffolds_restarenosa.snps.fourfold.vcf.gz -nt 1 -XL Blacklist.Excess.Het.List.Genes.With.5orMore.2PopsMin.AllHet.Sites.GATK.intervals --interval_set_rule INTERSECTION -XL Blacklist_allscaff_ExcSites1.6x_maxRD.GATK.intervals -L four.fold.degenerate.sites.GATK.intervals 
+INFO  19:20:05,612 HelpFormatter - Executing as vlkofly@zenon19.cerit-sc.cz on Linux 4.19.0-6-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  19:20:05,614 HelpFormatter - Date/Time: 2020/12/10 19:20:05 
+INFO  19:20:05,614 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:20:05,614 HelpFormatter - -------------------------------------------------------------------------------- 
+##### ERROR ------------------------------------------------------------------------------------------
+##### ERROR A USER ERROR has occurred (version 3.7-0-gcfedb67): 
+##### ERROR
+##### ERROR This means that one or more arguments or inputs in your command are incorrect.
+##### ERROR The error message below tells you what is the problem.
+##### ERROR
+##### ERROR If the problem is an invalid argument, please check the online documentation guide
+##### ERROR (or rerun your command with --help) to view allowable command-line arguments for this tool.
+##### ERROR
+##### ERROR Visit our website and forum for extensive documentation and answers to 
+##### ERROR commonly asked questions https://software.broadinstitute.org/gatk
+##### ERROR
+##### ERROR Please do NOT post this error to the GATK forum unless you have really tried to fix it yourself.
+##### ERROR
+##### ERROR MESSAGE: Could not read file /scratch.ssd/vlkofly/job_1807268.cerit-pbs.cerit-sc.cz/lyrata_scaffolds_restarenosa.bipassed.vcf.gz because file 'lyrata_scaffolds_restarenosa.bipassed.vcf.gz' does not exist
+##### ERROR ------------------------------------------------------------------------------------------

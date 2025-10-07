@@ -1,0 +1,44 @@
+INFO  19:01:06,815 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:01:06,819 HelpFormatter - The Genome Analysis Toolkit (GATK) v3.7-0-gcfedb67, Compiled 2016/12/12 11:21:18 
+INFO  19:01:06,819 HelpFormatter - Copyright (c) 2010-2016 The Broad Institute 
+INFO  19:01:06,819 HelpFormatter - For support and documentation go to https://software.broadinstitute.org/gatk 
+INFO  19:01:06,819 HelpFormatter - [Thu Dec 10 19:01:06 CET 2020] Executing on Linux 4.19.0-6-amd64 amd64 
+INFO  19:01:06,819 HelpFormatter - Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27 
+INFO  19:01:06,823 HelpFormatter - Program Args: -T GenotypeGVCFs -R JIC_reference/alygenomes.fasta -V BAB_12da_HC.g.vcf.gz -V HRA_01ta_HC.g.vcf.gz -V HRA_10ta_HC.g.vcf.gz -V SUB_03da_HC.g.vcf.gz -V ZEP_07da_HC.g.vcf.gz --max_num_PL_values 1500 -nt 1 -L scaffold_5 -o scaffold_5arenosa.vcf.gz 
+INFO  19:01:06,826 HelpFormatter - Executing as vlkofly@zenon7.cerit-sc.cz on Linux 4.19.0-6-amd64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.8.0_60-b27. 
+INFO  19:01:06,826 HelpFormatter - Date/Time: 2020/12/10 19:01:06 
+INFO  19:01:06,827 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:01:06,827 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  19:01:06,852 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  19:01:07,265 GenomeAnalysisEngine - Downsampling Settings: Method: BY_SAMPLE, Target Coverage: 1000 
+INFO  19:01:07,648 IntervalUtils - Processing 21221946 bp from intervals 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+INFO  19:01:07,774 GenomeAnalysisEngine - Preparing for traversal 
+INFO  19:01:07,775 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  19:01:07,775 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  19:01:07,776 ProgressMeter -                 | processed |    time |    per 1M |           |   total | remaining 
+INFO  19:01:07,776 ProgressMeter -        Location |     sites | elapsed |     sites | completed | runtime |   runtime 
+WARN  19:01:08,020 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  19:01:08,020 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  19:01:08,021 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+INFO  19:01:08,021 GenotypeGVCFs - Notice that the -ploidy parameter is ignored in GenotypeGVCFs tool as this is automatically determined by the input variant files 
+WARN  19:01:08,918 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not org.broadinstitute.gatk.tools.walkers.variantutils.GenotypeGVCFs 
+INFO  19:01:37,787 ProgressMeter - scaffold_5:12440601       1.2E7    30.0 s       2.0 s       58.6%    51.0 s      21.0 s 
+INFO  19:01:55,373 ProgressMeter -            done   2.1221946E7    47.0 s       2.0 s      100.0%    47.0 s       0.0 s 
+INFO  19:01:55,374 ProgressMeter - Total runtime 47.60 secs, 0.79 min, 0.01 hours 
+------------------------------------------------------------------------------------------
+Done. There were 9 WARN messages, the first 9 are repeated below.
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant2 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant3 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant4 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:07,649 IndexDictionaryUtils - Track variant5 doesn't have a sequence dictionary built in, skipping dictionary validation 
+WARN  19:01:08,020 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  19:01:08,020 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  19:01:08,021 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  19:01:08,918 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not org.broadinstitute.gatk.tools.walkers.variantutils.GenotypeGVCFs 
+------------------------------------------------------------------------------------------
